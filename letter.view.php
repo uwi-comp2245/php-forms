@@ -8,14 +8,11 @@
 	</head>
 	<body>
 		<div class="container">
-      <header>
-        <h1>Forms and PHP</h1>
-        <p>A simple form that is processed with PHP</p>
-      </header>
+			<?php include 'header.php'; ?>
 
 			<main>
 				<h2>Generated Letter</h2>
-				<p>I hereby declare that <?= $firstname . ' ' . $lastname; ?>, who is a <?= $yearOfStudy; ?> student in the faculty of <?= $faculty; ?> is a brilliant student and that <?= $gender; ?> will obtain an A+ in the course INFO2180.</p>
+				<p>I hereby declare that <strong><?= strtoupper($firstname . ' ' . $lastname); ?></strong>, who is a <strong><?= $yearOfStudy; ?></strong> student in the faculty of <strong><?= $faculty; ?></strong> is a brilliant student and that <?= $gender; ?> will obtain an A+ in the course INFO2180.</p>
 
 				<h3>Additional Comments</h3>
 				<p><?= $comments; ?></p>
@@ -26,9 +23,7 @@
 				<p>The Lecturer of the Course</p>
 			</main>
 
-      <footer>
-        <p class="text-muted">Copyright &copy; 2016, Form &amp; Co.</p>
-      </footer>
+      <?php include 'footer.php'; ?>
     </div>
 	</body>
 </html>

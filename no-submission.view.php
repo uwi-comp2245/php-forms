@@ -8,19 +8,14 @@
 	</head>
 	<body>
 		<div class="container">
-      <header>
-        <h1>Forms and PHP</h1>
-        <p>A simple form that is processed with PHP</p>
-      </header>
+			<?php include 'header.php'; ?>
 
 			<main>
 				<h2>Generated Letter</h2>
-        <p>It seems you didn't fill out and submit the form. <a href="index.html">Fill out the form</a> before generating the letter.</p>
+        <p>It seems you didn't fill out and submit the form. <a href="index.php">Fill out the form</a> before generating the letter.</p>
 			</main>
 
-      <footer>
-        <p class="text-muted">Copyright &copy; 2016, Form &amp; Co.</p>
-      </footer>
+      <?php include 'footer.php'; ?>
     </div>
 	</body>
 </html>

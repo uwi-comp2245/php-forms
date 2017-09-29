@@ -8,10 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Forms and PHP</h1>
-        <p>A simple form that is processed with PHP</p>
-      </header>
+      <?php include 'header.php'; ?>
+      
       <main>
         <h2>Writing a simple letter</h2>
         <form action="letter.php" method="post">
@@ -63,9 +61,7 @@
         </form>
       </main>
 
-      <footer>
-        <p class="text-muted">Copyright &copy; 2016, Form &amp; Co.</p>
-      </footer>
+      <?php include 'footer.php'; ?>
     </div>
   </body>
 </html>
