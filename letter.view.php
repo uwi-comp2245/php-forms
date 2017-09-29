@@ -12,9 +12,10 @@
 
 			<main>
 				<h2>Generated Letter</h2>
+				<p><strong>Date:</strong> <?= date('F d, Y'); ?></p>
 				<p>I hereby declare that <strong><?= strtoupper($firstname . ' ' . $lastname); ?></strong>, who is a <strong><?= $yearOfStudy; ?></strong> student in the faculty of <strong><?= $faculty; ?></strong> is a brilliant student and that <?= $gender; ?> will obtain an A+ in the course INFO2180.</p>
 
-				<h3>Additional Comments</h3>
+				<h4>Additional Comments</h4>
 				<p><?= $comments; ?></p>
 
         <hr>
